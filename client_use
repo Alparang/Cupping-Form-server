@@ -1,0 +1,14 @@
+get('db/') : view.ejs // 리스트 가져오기 SELECT
+get('db/:id') : view.ejs
+
+get('db/add') : add.ejs // 데이터 추가 INSERT
+  post('db/add')
+  get('db/:id') //redirection 시킬것임
+
+get('db/:id/edit') : edit.ejs //수정 UPDATE
+  post('db/:id/edit')
+  get('db/:id') //redirection
+
+get('db/:id/delete') : delete.ejs // 삭제 DELETE
+  post('db/:id/delete') // delete 쿼리를 db에 날린다.
+  get('db/') //메인페이지 redirect
