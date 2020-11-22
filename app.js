@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var coffeeRouter = require('./routes/coffee');
 var boardRouter = require('./routes/board');
+var recommendRouter = require('./routes/recommend');
 
 var mysql = require('mysql');
 
@@ -47,6 +48,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/coffee', coffeeRouter);
 app.use('/board', boardRouter);
+app.use('/recommend', recommendRouter);
 
 
 // catch 404 and forward to error handler

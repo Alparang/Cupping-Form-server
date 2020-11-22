@@ -1,0 +1,14 @@
+{
+    "horizontalAttributes": [
+        "fragrance",
+        "flavor",
+        "afterTaste",
+        "acidity",
+        "bodiness",
+        "balance",
+        "uniformity",
+        "cleanCup",
+        "sweetness",
+        "overall"
+    ]
+}

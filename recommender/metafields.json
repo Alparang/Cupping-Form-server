@@ -1,0 +1,61 @@
+{
+    "evaluation_index": {
+        "type": "id"
+    },
+    "form_name": {
+        "type": "string"
+    },
+    "fragrance": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "flavor": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "afterTaste": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "acidity": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "bodiness": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "balance": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "uniformity": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "cleanCup": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "sweetness": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "overall": {
+        "type": "number",
+        "min": 0,
+        "max": 10
+    },
+    "user_num": {
+        "type": "id"
+    }
+}
