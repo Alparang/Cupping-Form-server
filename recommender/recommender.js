@@ -49,11 +49,13 @@ async function getByAttribute(attributes) {
 
 async function getSimilar(form) {
   let forms = await queryProcessor.getForms();
+  forms = forms.filter(f => f.evaluation_index != form.evaluation_index);
   return sortFormsByDistance(forms, form);
 }
 
 async function getSimilarByAttribute(form, attributes) {
   let forms = await queryProcessor.getForms();
+  forms = forms.filter(f => f.evaluation_index != form.evaluation_index);
   return sortFormsByDistance(forms, form, attributes);
 }
 
